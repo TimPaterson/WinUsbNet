@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUsbNet", "WinUsbNet\WinUsbNet.csproj", "{E3A667CE-F462-4E68-808B-54DE6E323992}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUsbTest", "WinUsbTest\WinUsbTest.csproj", "{B9A22581-FB9B-4792-9DD7-E17090D8590F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3A667CE-F462-4E68-808B-54DE6E323992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A667CE-F462-4E68-808B-54DE6E323992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A667CE-F462-4E68-808B-54DE6E323992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A667CE-F462-4E68-808B-54DE6E323992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A22581-FB9B-4792-9DD7-E17090D8590F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A22581-FB9B-4792-9DD7-E17090D8590F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A22581-FB9B-4792-9DD7-E17090D8590F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A22581-FB9B-4792-9DD7-E17090D8590F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDFAF607-F0E8-4442-99DD-1AFDEE843011}
+	EndGlobalSection
+EndGlobal
