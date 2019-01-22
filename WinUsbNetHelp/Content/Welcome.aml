@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="e8f8006d-1c14-4a09-a066-99700d658e09" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>
+				The WinUsbNet class library gives .NET managed code direct access to 
+				USB devices through WinUSB, the generic USB device driver included 
+				with Windows.
+			</para>
+			<para>
+				This project is intended for developers who are creating their own 
+				USB device. Using WinUsbNet eliminates the need to understand 
+				anything about Windows device drivers. If you know what a USB 
+				endpoint is and can use the .NET Framework class Stream, you know 
+				enough to transfer data between your application and your USB device.
+			</para>
+		</introduction>
+
+		<section>
+			<title>Getting Started</title>
+			<content>
+				<para>
+					Start with the
+					<codeEntityReference>T:WinUsbNet.WinUsbManager</codeEntityReference> 
+					class.
+				</para>
+			</content>
+		</section>
+
+		<section>
+			<title>WinUsbNet Test App</title>
+			<content>
+				<para>
+					To use the WinUsbNet Test App, first copy and paste the GUID that 
+					WinUSB uses to identify the device. Clicking the Find button will 
+					cause a search for any matching devices already attached. The app 
+					will also track as devices are attached and detached.
+			</para>
+			<para>
+					Tooltips are used to explain the usage of each element on the 
+					interface. Take a moment to hover the mouse over the various 
+					controls. Controls can become enabled or disabled depending on 
+					the endpoint and direction selected.
+			</para>
+			<para>
+					To transfer data, select an endpoint from the dropdown. Most 
+					endpoints are either In or Out, but as shown in the screenshot, 
+					it is possible for a single endpoint to be both. To read data 
+					from an In endpoint, just set the number of bytes to read in the 
+					Read Length box (decimal) and click the Transfer Data button. The 
+					data will show up as hex bytes in blue in the output window. To 
+					send data to an Out endpoint, enter the data in the Out Data (hex) 
+					text box as a sequence of hex bytes separated by spaces, then 
+					click the Transfer Data button. The data you send will be 
+					displayed in the output window in green.
+			</para>
+			<para>
+					If relevant to your application, you can perform a USB control 
+					transfer by selecting “Control” from the Endpoint dropdown. This 
+					will enable the group box labeled Control Transfer (hex values), 
+					where you can enter the specifics. You will need to understand USB 
+					control transfers, although some basic help is available in tooltips.
+				</para>
+			</content>
+		</section>
+
+		<relatedTopics>
+		</relatedTopics>
+	</developerConceptualDocument>
+</topic>
