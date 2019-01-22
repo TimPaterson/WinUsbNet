@@ -9,10 +9,12 @@ namespace WinUsbNet
 	/// Provides a <see cref="Stream"/> for transferring data through a USB pipe.
 	/// </summary>
 	/// <remarks>
+	/// <para>
 	/// A USB device provides one or more endpoints for communicating with
 	/// the host computer. The logical connection between the endpoint and the host
 	/// is a USB pipe. The <b>PipeStream</b> provides methods for transferring data
 	/// over this pipe.
+	/// </para>
 	/// <para>
 	/// You do not create a <b>PipeStream</b> directly. A <b>PipeStream</b> is
 	/// automatically created for each endpoint of the USB device when the 
@@ -112,7 +114,6 @@ namespace WinUsbNet
 		/// to the USB device that the host has no more data to send.
 		/// </summary>
 		/// <value>
-		/// Type: <see cref="System.Boolean"/>
 		/// <para><b>true</b> if a short packet will be used; otherwise <b>false</b>.</para>
 		/// </value>
 		/// <exception cref="NotSupportedException">The <see cref="PipeStream"/>
@@ -151,7 +152,6 @@ namespace WinUsbNet
 		/// should be used to terminate a read transfer.
 		/// </summary>
 		/// <value>
-		/// Type: <see cref="System.Boolean"/>
 		/// <para><b>true</b> if a short packet will terminate a read transfer; otherwise <b>false</b>.</para>
 		/// </value>
 		/// <exception cref="NotSupportedException">The <see cref="PipeStream"/>
@@ -190,7 +190,6 @@ namespace WinUsbNet
 		/// Gets the maximum size, in bytes, of the packets that are received on the pipe.
 		/// </summary>
 		/// <value>
-		/// Type: <see cref="Int32"/>
 		/// <para>The maximum size, in bytes, of the packets that are received on the pipe.</para>
 		/// </value>
 		/// <exception cref="NotSupportedException">The <see cref="PipeStream"/>
@@ -211,7 +210,6 @@ namespace WinUsbNet
 		/// Gets the maximum size, in bytes, of the packets that are transmitted on the pipe.
 		/// </summary>
 		/// <value>
-		/// Type: <see cref="Int32"/>
 		/// <para>The maximum size, in bytes, of the packets that are transmitted on the pipe.</para>
 		/// </value>
 		/// <exception cref="NotSupportedException">The <see cref="PipeStream"/>
@@ -232,7 +230,6 @@ namespace WinUsbNet
 		/// Gets the USB endpoint number for the <see cref="PipeStream"/>.
 		/// </summary>
 		/// <value>
-		/// Type: <see cref="System.Int32"/>
 		/// <para>The USB endpoint number, in the range 0 - 15.</para>
 		/// </value>
 		/// <remarks>
@@ -279,7 +276,6 @@ namespace WinUsbNet
 		/// Gets or sets the time, in milliseconds, to wait for a read operation to complete.
 		/// </summary>
 		/// <value>
-		/// Type: <see cref="System.Int32"/>
 		/// <para>The time, in milliseconds, to wait for a read operation to complete.
 		/// A value of zero means never time out.</para>
 		/// </value>
@@ -336,7 +332,6 @@ namespace WinUsbNet
 		/// Gets a value that indicates if the <see cref="PipeStream"/> can time out.
 		/// </summary>
 		/// <value>
-		/// Type: <see cref="System.Boolean"/>
 		/// <para><b>true</b> if the <see cref="PipeStream"/> can read from the
 		/// USB device, otherwise <b>false</b>.</para>
 		/// </value>
@@ -349,7 +344,6 @@ namespace WinUsbNet
 		/// Gets a value that indicates if the <see cref="PipeStream"/> can read from the USB device.
 		/// </summary>
 		/// <value>
-		/// Type: <see cref="System.Boolean"/>
 		/// <para><b>true</b> if the <see cref="PipeStream"/> can read from the
 		/// USB device, otherwise <b>false</b>.</para>
 		/// </value>
@@ -362,7 +356,6 @@ namespace WinUsbNet
 		/// Gets the value <b>false</b>, indicating the <see cref="PipeStream"/> does not support seeking.
 		/// </summary>
 		/// <value>
-		/// Type: <see cref="System.Boolean"/>
 		/// <para>Always return <b>false</b>.</para>
 		/// </value>
 		public override bool CanSeek
@@ -374,7 +367,6 @@ namespace WinUsbNet
 		/// Gets a value that indicates if the <see cref="PipeStream"/> can write to the USB device.
 		/// </summary>
 		/// <value>
-		/// Type: <see cref="System.Boolean"/>
 		/// <para><b>true</b> if the <see cref="PipeStream"/> can write to the
 		/// USB device, otherwise <b>false</b>.</para>
 		/// </value>
@@ -404,7 +396,6 @@ namespace WinUsbNet
 		/// <param name="count">The maximum number of bytes to read from the
 		/// USB device.</param>
 		/// <returns>
-		/// Type: <see cref="System.Int32"/>
 		/// <para>The total number of bytes read into <paramref name="buffer"/>. This can be
 		/// less than the number of bytes requested (including zero) if a short packet is received and the 
 		/// <see cref="ReadUseShortPacket"/> property is set to <b>true</b>.</para>
@@ -475,7 +466,6 @@ namespace WinUsbNet
 		/// Attempts to read one byte from the USB device.
 		/// </summary>
 		/// <returns>
-		/// Type: <see cref="System.Int32"/>
 		/// <para>The unsigned byte cast to an Int32, or -1 if a short packet is received and the 
 		/// <see cref="ReadUseShortPacket"/> property is set to <b>true</b>.</para>
 		/// </returns>
@@ -676,9 +666,9 @@ namespace WinUsbNet
 		/// <summary>
 		/// Throws <see cref="NotSupportedException"/>.
 		/// </summary>
-		/// <param name="offset">Ignored.</param>
-		/// <param name="origin">Ignored.</param>
-		/// <returns>Nothing.</returns>
+		/// <param name="offset"></param>
+		/// <param name="origin"></param>
+		/// <returns>Throws <see cref="NotSupportedException"/></returns>
 		public override long Seek(long offset, SeekOrigin origin)
 		{
 			throw new NotSupportedException();
@@ -687,7 +677,7 @@ namespace WinUsbNet
 		/// <summary>
 		/// Throws <see cref="NotSupportedException"/>.
 		/// </summary>
-		/// <param name="value">Ignored.</param>
+		/// <param name="value"></param>
 		public override void SetLength(long value)
 		{
 			throw new NotSupportedException();

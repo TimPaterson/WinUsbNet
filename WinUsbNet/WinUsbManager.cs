@@ -24,13 +24,14 @@ namespace WinUsbNet
 	/// The root class for the managed interface to WinUSB.sys.
 	/// </summary>
 	/// <remarks>
+	/// <para>
 	/// The first step in communicating with a USB device is to use the
 	/// <see cref="WinUsbManager(Guid)">WinUsbManager</see> constructor
 	/// to create an instance of <b>WinUsbManager</b>. The <see cref="UsbDevices"/>
 	/// collection will be populated with any USB devices with a matching 
 	/// GUID that are already attached. You can subscribe to the
 	/// <see cref="DeviceChange"/> event to be informed when this collection
-	/// changes.
+	/// changes.</para>
 	/// <para>
 	/// The next step is to select a <see cref="UsbDevice"/> from the 
 	/// <see cref="UsbDevices"/> collection and call its 
