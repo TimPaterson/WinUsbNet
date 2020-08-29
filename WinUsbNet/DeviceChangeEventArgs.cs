@@ -51,10 +51,11 @@ namespace WinUsbNet
 		/// <see cref="WinUsbManager.DeviceChange"/> event.</para>
 		/// </value>
 		/// <remarks>
+		/// <para>
 		/// If a USB device has been attached (<see cref="IsAttach"/> is <b>true</b>),
 		/// this field contains a newly created <see cref="WinUsbNet.UsbDevice"/>
 		/// which has already been added to the <see cref="WinUsbManager.UsbDevices"/>
-		/// collection of <see cref="WinUsbManager"/>.
+		/// collection of <see cref="WinUsbManager"/>.</para>
 		/// <para>
 		/// If a USB device has been detached (<see cref="IsAttach"/> is <b>false</b>),
 		/// this field contains the <see cref="WinUsbNet.UsbDevice"/> that has been

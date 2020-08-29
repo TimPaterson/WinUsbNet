@@ -67,17 +67,18 @@ namespace WinUsbNet
 	/// </example>
 	public class WinUsbManager : IDisposable
 	{
-		#region Constructor	& Destructor
+		#region Constructor & Destructor
 		
 		/// <summary>
 		/// Initializes a new instance of the <see cref="WinUsbManager"/> class.
 		/// </summary>
 		/// <param name="guid">GUID specified in the device driver installation file (INF).</param>
 		/// <remarks>
+		/// <para>
 		/// Each USB device that uses the generic USB device driver WinUSB.sys
 		/// is assigned a GUID in the device driver installation file (INF).
 		/// To create an instance of <see cref="WinUsbManager"/>, this GUID
-		/// must be passed to the constructor.
+		/// must be passed to the constructor.</para>
 		/// <para>
 		/// One instance of <see cref="WinUsbManager"/> handles all attached
 		/// USB devices with the assigned GUID. To handle another USB device with 
@@ -131,9 +132,10 @@ namespace WinUsbNet
 		/// Gets the collection of matching USB devices that are currently attached.
 		/// </summary>
 		/// <remarks>
+		/// <para>
 		/// This collection contains one <see cref="UsbDevice"/> for each
 		/// USB device that is attached and whose WinUSB GUID matches the GUID of the parent
-		/// <see cref="WinUsbManager"/>.
+		/// <see cref="WinUsbManager"/>.</para>
 		/// <para>
 		/// When <see cref="WinUsbManager"/> is created, this collection is immediately
 		/// populated with the USB devices that are currently attached, if any. As devices

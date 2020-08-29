@@ -1,13 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUsbNet", "WinUsbNet\WinUsbNet.csproj", "{E3A667CE-F462-4E68-808B-54DE6E323992}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUsbTest", "WinUsbTest\WinUsbTest.csproj", "{B9A22581-FB9B-4792-9DD7-E17090D8590F}"
 EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "WinUsbNetHelp", "WinUsbNetHelp\WinUsbNetHelp.shfbproj", "{3E63F73E-5574-4688-A2C0-E8F1C9F4D20B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E3A667CE-F462-4E68-808B-54DE6E323992} = {E3A667CE-F462-4E68-808B-54DE6E323992}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUsbExample", "WinUsbExample\WinUsbExample.csproj", "{DCDE8B82-6382-4ABA-9A40-3A508B7A31D3}"
 EndProject

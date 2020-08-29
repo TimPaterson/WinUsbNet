@@ -14,7 +14,7 @@
     <Name>WinUsbNetHelp</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
-    <OutputPath>.\Help\</OutputPath>
+    <OutputPath>..\docs\</OutputPath>
     <HtmlHelpName>WinUsbNet</HtmlHelpName>
     <Language>en-US</Language>
     <TransformComponentArguments>
@@ -36,19 +36,26 @@
     <DocumentationSources>
       <DocumentationSource sourceFile="..\WinUsbNet\WinUsbNet.csproj" xmlns="" />
     </DocumentationSources>
-    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
-    <SyntaxFilters>Standard</SyntaxFilters>
+    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
+    <SyntaxFilters>C#, Visual Basic, Managed C++</SyntaxFilters>
     <PresentationStyle>VS2013</PresentationStyle>
     <CleanIntermediates>True</CleanIntermediates>
-    <KeepLogFile>True</KeepLogFile>
+    <KeepLogFile>False</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
     <IndentHtml>False</IndentHtml>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="(global)" isDocumented="False" />
-<NamespaceSummaryItem name="WinUsbNet" isDocumented="True">The &lt;b&gt;WinUsbNet&lt;/b&gt; namespace contains classes that provide a .NET managed interface to the generic USB device driver WinUSB.sys. Start with &lt;b&gt;WinUsbManager&lt;/b&gt;; it is the root class from which all others are created.</NamespaceSummaryItem></NamespaceSummaries>
+      <NamespaceSummaryItem name="WinUsbNet" isDocumented="True">The &lt;b&gt;WinUsbNet&lt;/b&gt; namespace contains classes that provide a .NET managed interface to the generic USB device driver WinUSB.sys. Start with &lt;b&gt;WinUsbManager&lt;/b&gt;; it is the root class from which all others are created.</NamespaceSummaryItem>
+    </NamespaceSummaries>
     <ProjectSummary>WinUsbNext Project Summary</ProjectSummary>
+    <HtmlSdkLinkType>None</HtmlSdkLinkType>
+    <BinaryTOC>True</BinaryTOC>
+    <IncludeFavorites>False</IncludeFavorites>
+    <WebsiteSdkLinkType>None</WebsiteSdkLinkType>
+    <AppendMarkdownFileExtensionsToUrls>False</AppendMarkdownFileExtensionsToUrls>
+    <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->

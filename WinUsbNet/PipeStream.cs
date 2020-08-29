@@ -120,11 +120,12 @@ namespace WinUsbNet
 		/// does not support writing.
 		/// </exception>
 		/// <remarks>
+		/// <para>
 		/// This property only has an affect when the number of bytes transferred by
 		/// the <see cref="Write">Write</see> method happens to equal a multiple of
 		/// <see cref="WriteMaxPacketSize"/>, the maximum packet size for the USB 
 		/// endpoint. In that case, if the <b>WriteUseShortPacket</b> property is 
-		/// <b>true</b>, then a zero-length packet will be sent after the data.
+		/// <b>true</b>, then a zero-length packet will be sent after the data.</para>
 		/// <para>
 		/// If the <b>WriteUseShortPacket</b> property is <b>false</b>, then a
 		/// zero-length packet will never be added.</para>
@@ -158,9 +159,10 @@ namespace WinUsbNet
 		/// does not support reading.
 		/// </exception>
 		/// <remarks>
+		/// <para>
 		/// If the <b>ReadUseShortPacket</b> property is <b>true</b>, then a short
 		/// packet received from the USB device will terminate a <see cref="Read">Read</see>
-		/// or <see cref="ReadByte">ReadByte</see> in progress.
+		/// or <see cref="ReadByte">ReadByte</see> in progress.</para>
 		/// <para>
 		/// If the <b>ReadUseShortPacket</b> property is <b>false</b>, then a
 		/// short packet will not terminate the read transfer. The transfer will
@@ -284,10 +286,11 @@ namespace WinUsbNet
 		/// does not support reading.
 		/// </exception>
 		/// <remarks>
+		/// <para>
 		/// The initial value of <b>ReadTimeout</b> is set to the value of the
 		/// <see cref="UsbDevice.DefaultReadTimeout"/> property on the parent
 		/// <see cref="UsbDevice"/> at the time its <see cref="UsbDevice.Open">
-		/// Open</see> method is called.
+		/// Open</see> method is called.</para>
 		/// <para>
 		/// If a read operation times out, <see cref="Win32Exception"/> is thrown
 		/// with <see cref="Win32Exception.NativeErrorCode"/> set to 0x00000079.</para>
@@ -413,10 +416,21 @@ namespace WinUsbNet
 		/// the operating system. If <see cref="Win32Exception.NativeErrorCode"/> is 0x00000079,
 		/// the operation timed out.</exception>
 		/// <remarks>
+		/// <para>
 		/// If the USB device returns more data than requested, the excess
 		/// data will be stored in an internal buffer. Future calls to
 		/// <see cref="Read">Read</see> or <see cref="ReadByte">ReadByte</see>
-		/// will read from the internal buffer until it is exhausted.
+		/// will read from the internal buffer until it is exhausted.</para>
+		/// <para>
+		/// If the <see cref="ReadUseShortPacket"/> property is <b>true</b>, then a short
+		/// packet received from the USB device will terminate the read transfer. The number
+		/// of bytes received to that point will be returned.</para>
+		/// <para>
+		/// If the <see cref="ReadUseShortPacket"/> property is <b>false</b>, then a
+		/// short packet will not terminate the read transfer. The transfer will
+		/// continue until the number of bytes requested has been received or
+		/// the time limit specifed by <see cref="ReadTimeout"/> has been reached.
+		/// </para>
 		/// </remarks>
 		/// <seealso cref="ReadByte">ReadByte</seealso>
 		/// <seealso cref="Write">Write</seealso>

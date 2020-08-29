@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="CanRead property" Url="html/198ffda2-8634-0a30-8b00-f840e8acb6a0.htm" />
+  <HelpKINode Title="CanSeek property" Url="html/134253b8-de9a-87a7-71ed-88d104e8ae73.htm" />
+  <HelpKINode Title="CanTimeout property" Url="html/6474db6e-cc00-ed47-e72f-d852d82280b4.htm" />
+  <HelpKINode Title="CanWrite property" Url="html/9229f12c-f05c-8b1b-899c-c5329f3c7c51.htm" />
+  <HelpKINode Title="ClearReadBuffer method" Url="html/bac83312-cf7a-6b45-e06f-011810fd9737.htm" />
+  <HelpKINode Title="Close method" Url="html/b6b228d9-3e21-be6f-25dc-3c3b3657b820.htm" />
+  <HelpKINode Title="ControlRead method" Url="html/7e91a4ce-bb64-709d-dee2-b46cbf7e9c8b.htm" />
+  <HelpKINode Title="ControlWrite method" Url="html/5f9bf2ab-21bd-1fcd-197d-f234eaa17a9d.htm" />
+  <HelpKINode Title="DefaultReadTimeout property" Url="html/00ba8c4f-96fc-6a72-3f4e-ec26f0db4b37.htm" />
+  <HelpKINode Title="DeviceChange event" Url="html/43d0997e-3f63-bdf4-d82e-7837dfe8c9f1.htm" />
+  <HelpKINode Title="DeviceChangeEventArgs class">
+    <HelpKINode Title="DeviceChangeEventArgs Class" Url="html/041a8667-9920-f2c9-22c0-4f8ff4c22e57.htm" />
+    <HelpKINode Title="constructor" Url="html/28e0ac91-c00d-ad15-3aa9-03231fd5edc4.htm" />
+    <HelpKINode Title="methods" Url="html/c095f09a-b249-826b-54d0-e715a4515fc4.htm" />
+    <HelpKINode Title="properties" Url="html/902d8db8-fc40-d965-9373-7ea06999a38f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeviceChangeEventArgs.DeviceChangeEventArgs constructor" Url="html/28e0ac91-c00d-ad15-3aa9-03231fd5edc4.htm" />
+  <HelpKINode Title="DeviceChangeEventArgs.DeviceName property" Url="html/48ef607d-4ec4-7210-1a67-d354fb672eac.htm" />
+  <HelpKINode Title="DeviceChangeEventArgs.IsAttach property" Url="html/73500399-4cb5-cebd-5b92-cfab3ba54edd.htm" />
+  <HelpKINode Title="DeviceChangeEventArgs.UsbDevice property" Url="html/8488c66c-c6cc-c1ce-ba63-396d709824c1.htm" />
+  <HelpKINode Title="DeviceName property">
+    <HelpKINode Title="DeviceChangeEventArgs.DeviceName Property " Url="html/48ef607d-4ec4-7210-1a67-d354fb672eac.htm" />
+    <HelpKINode Title="UsbDevice.DeviceName Property " Url="html/768277de-2e88-c9f3-e819-2fb289cc73bb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Dispose method" Url="html/4123900a-afea-8d6b-43d4-efb086c12293.htm" />
+  <HelpKINode Title="Finalize method">
+    <HelpKINode Title="UsbDevice.Finalize Method " Url="html/5e7180f7-f3bf-9fc8-c9de-2b866f274c5d.htm" />
+    <HelpKINode Title="WinUsbManager.Finalize Method " Url="html/5ebf84a8-84e5-9499-4e08-76fb6ca3b82a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Flush method" Url="html/d894fba8-c47c-5035-b405-ff3d2acbcea0.htm" />
+  <HelpKINode Title="GetMyString property" Url="html/eb45d302-2640-cdde-4f84-89acdae5ab10.htm" />
+  <HelpKINode Title="Introduction" Url="html/e8f8006d-1c14-4a09-a066-99700d658e09.htm" />
+  <HelpKINode Title="IsAttach property" Url="html/73500399-4cb5-cebd-5b92-cfab3ba54edd.htm" />
+  <HelpKINode Title="IsAttached property" Url="html/842a228f-bb62-ae8a-844b-325846b0c71f.htm" />
+  <HelpKINode Title="IsOpen property" Url="html/4ce6b215-8221-fb2f-9b9a-cd5f7d4dd613.htm" />
+  <HelpKINode Title="Length property" Url="html/e84bb2e4-22e1-0427-7211-76fb1f4c3a39.htm" />
+  <HelpKINode Title="Open method" Url="html/72bfdb00-fb76-63ad-2011-3ef78f66e9ca.htm" />
+  <HelpKINode Title="PipeId property" Url="html/bcccc9b8-598f-2d83-a46a-5be3872e960d.htm" />
+  <HelpKINode Title="PipeStream class">
+    <HelpKINode Title="PipeStream Class" Url="html/cf6e7c0e-4099-2906-21b9-5d2043e72c19.htm" />
+    <HelpKINode Title="methods" Url="html/fe0ad571-45b2-e7fd-fef2-bfe0bd52acac.htm" />
+    <HelpKINode Title="properties" Url="html/df1486ea-ca3f-6f57-ee08-62bb77b191a9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PipeStream.CanRead property" Url="html/198ffda2-8634-0a30-8b00-f840e8acb6a0.htm" />
+  <HelpKINode Title="PipeStream.CanSeek property" Url="html/134253b8-de9a-87a7-71ed-88d104e8ae73.htm" />
+  <HelpKINode Title="PipeStream.CanTimeout property" Url="html/6474db6e-cc00-ed47-e72f-d852d82280b4.htm" />
+  <HelpKINode Title="PipeStream.CanWrite property" Url="html/9229f12c-f05c-8b1b-899c-c5329f3c7c51.htm" />
+  <HelpKINode Title="PipeStream.ClearReadBuffer method" Url="html/bac83312-cf7a-6b45-e06f-011810fd9737.htm" />
+  <HelpKINode Title="PipeStream.Flush method" Url="html/d894fba8-c47c-5035-b405-ff3d2acbcea0.htm" />
+  <HelpKINode Title="PipeStream.Length property" Url="html/e84bb2e4-22e1-0427-7211-76fb1f4c3a39.htm" />
+  <HelpKINode Title="PipeStream.PipeId property" Url="html/bcccc9b8-598f-2d83-a46a-5be3872e960d.htm" />
+  <HelpKINode Title="PipeStream.Position property" Url="html/c90ccb91-a9d8-d3b8-2f94-5f04c4096c12.htm" />
+  <HelpKINode Title="PipeStream.Read method" Url="html/5875c070-6f2b-00e2-e673-5ad6ba4eebef.htm" />
+  <HelpKINode Title="PipeStream.ReadByte method" Url="html/ab9b8c41-c701-d7eb-22b7-5fa3e9b2bd6e.htm" />
+  <HelpKINode Title="PipeStream.ReadMaxPacketSize property" Url="html/eecab746-4b96-d7f5-420b-ef02097e4258.htm" />
+  <HelpKINode Title="PipeStream.ReadTimeout property" Url="html/c76eea62-e247-783a-d4eb-27654f9d01cf.htm" />
+  <HelpKINode Title="PipeStream.ReadUseShortPacket property" Url="html/5fb5d6f5-9f4e-a9ec-4b39-09b06349ca52.htm" />
+  <HelpKINode Title="PipeStream.Seek method" Url="html/d4a13a29-6700-3496-4f51-5a242a6591dc.htm" />
+  <HelpKINode Title="PipeStream.SetLength method" Url="html/90c91d0a-4745-09c8-a7fb-631553db6a9c.htm" />
+  <HelpKINode Title="PipeStream.Write method" Url="html/a35c238c-339a-46a6-a782-724f461c062f.htm" />
+  <HelpKINode Title="PipeStream.WriteByte method" Url="html/026cd088-52c8-9636-d1b5-f6fbd66de11b.htm" />
+  <HelpKINode Title="PipeStream.WriteMaxPacketSize property" Url="html/46ffad56-1b02-35c2-1458-786a477692d2.htm" />
+  <HelpKINode Title="PipeStream.WriteTimeout property" Url="html/2806116b-a0c1-bf03-ee0c-bda075b13ff6.htm" />
+  <HelpKINode Title="PipeStream.WriteUseShortPacket property" Url="html/b0009742-777a-db24-aa1b-17cc1c51ab2f.htm" />
+  <HelpKINode Title="PipeStreamCollection class">
+    <HelpKINode Title="PipeStreamCollection Class" Url="html/6e7f9ac7-bc9a-bd06-8c2f-aa208bb3d2fd.htm" />
+    <HelpKINode Title="methods" Url="html/385c910a-3bdc-75a6-baf8-02d2b4d2fa76.htm" />
+    <HelpKINode Title="properties" Url="html/839bc008-af5d-ad73-e790-a53408154633.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PipeStreams property" Url="html/9908be68-4d50-ea5d-14c4-28360f84d27c.htm" />
+  <HelpKINode Title="Position property" Url="html/c90ccb91-a9d8-d3b8-2f94-5f04c4096c12.htm" />
+  <HelpKINode Title="Read method" Url="html/5875c070-6f2b-00e2-e673-5ad6ba4eebef.htm" />
+  <HelpKINode Title="ReadByte method" Url="html/ab9b8c41-c701-d7eb-22b7-5fa3e9b2bd6e.htm" />
+  <HelpKINode Title="ReadMaxPacketSize property" Url="html/eecab746-4b96-d7f5-420b-ef02097e4258.htm" />
+  <HelpKINode Title="ReadTimeout property" Url="html/c76eea62-e247-783a-d4eb-27654f9d01cf.htm" />
+  <HelpKINode Title="ReadUseShortPacket property" Url="html/5fb5d6f5-9f4e-a9ec-4b39-09b06349ca52.htm" />
+  <HelpKINode Title="Seek method" Url="html/d4a13a29-6700-3496-4f51-5a242a6591dc.htm" />
+  <HelpKINode Title="SetLength method" Url="html/90c91d0a-4745-09c8-a7fb-631553db6a9c.htm" />
+  <HelpKINode Title="Tag property" Url="html/72345f7e-c603-05ee-a7c9-4a44e0485cf3.htm" />
+  <HelpKINode Title="ToString method" Url="html/298d2160-8828-eae1-e06a-e91c1ccc8c31.htm" />
+  <HelpKINode Title="UsbDevice class">
+    <HelpKINode Title="UsbDevice Class" Url="html/5c95851e-394c-5556-4008-f65a2b8bf88f.htm" />
+    <HelpKINode Title="methods" Url="html/a8775b3d-cd90-e8c7-cf82-214c2f32e757.htm" />
+    <HelpKINode Title="properties" Url="html/f19a7812-80f3-fdfc-4bf1-7f04da48816f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UsbDevice property" Url="html/8488c66c-c6cc-c1ce-ba63-396d709824c1.htm" />
+  <HelpKINode Title="UsbDevice.Close method" Url="html/b6b228d9-3e21-be6f-25dc-3c3b3657b820.htm" />
+  <HelpKINode Title="UsbDevice.ControlRead method" Url="html/7e91a4ce-bb64-709d-dee2-b46cbf7e9c8b.htm" />
+  <HelpKINode Title="UsbDevice.ControlWrite method" Url="html/5f9bf2ab-21bd-1fcd-197d-f234eaa17a9d.htm" />
+  <HelpKINode Title="UsbDevice.DefaultReadTimeout property" Url="html/00ba8c4f-96fc-6a72-3f4e-ec26f0db4b37.htm" />
+  <HelpKINode Title="UsbDevice.DeviceName property" Url="html/768277de-2e88-c9f3-e819-2fb289cc73bb.htm" />
+  <HelpKINode Title="UsbDevice.Finalize method" Url="html/5e7180f7-f3bf-9fc8-c9de-2b866f274c5d.htm" />
+  <HelpKINode Title="UsbDevice.GetMyString property" Url="html/eb45d302-2640-cdde-4f84-89acdae5ab10.htm" />
+  <HelpKINode Title="UsbDevice.GetMyStringCallback delegate" Url="html/0853b087-d310-822a-88b8-890982c464ca.htm" />
+  <HelpKINode Title="UsbDevice.IsAttached property" Url="html/842a228f-bb62-ae8a-844b-325846b0c71f.htm" />
+  <HelpKINode Title="UsbDevice.IsOpen property" Url="html/4ce6b215-8221-fb2f-9b9a-cd5f7d4dd613.htm" />
+  <HelpKINode Title="UsbDevice.Open method" Url="html/72bfdb00-fb76-63ad-2011-3ef78f66e9ca.htm" />
+  <HelpKINode Title="UsbDevice.PipeStreams property" Url="html/9908be68-4d50-ea5d-14c4-28360f84d27c.htm" />
+  <HelpKINode Title="UsbDevice.Tag property" Url="html/72345f7e-c603-05ee-a7c9-4a44e0485cf3.htm" />
+  <HelpKINode Title="UsbDevice.ToString method" Url="html/298d2160-8828-eae1-e06a-e91c1ccc8c31.htm" />
+  <HelpKINode Title="UsbDeviceCollection class">
+    <HelpKINode Title="UsbDeviceCollection Class" Url="html/03788d6a-b0a1-b7fd-6383-528850d6a37e.htm" />
+    <HelpKINode Title="methods" Url="html/b92a65a5-8a07-cfc7-d0f5-36a668e7e4c9.htm" />
+    <HelpKINode Title="properties" Url="html/102db9a9-a39b-211b-3af8-cd39141695c4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UsbDevices property" Url="html/f3ede2a7-3d4a-e35d-c63a-64d1d3c62eab.htm" />
+  <HelpKINode Title="WinUsbManager class">
+    <HelpKINode Title="WinUsbManager Class" Url="html/8c270fc0-ca62-14d7-8032-031983fcb2a9.htm" />
+    <HelpKINode Title="constructor" Url="html/c9822f4d-107e-87c5-132c-1ff35c9c2014.htm" />
+    <HelpKINode Title="events" Url="html/9e0a7df6-e0a8-7ca4-48e3-2569369c1fc5.htm" />
+    <HelpKINode Title="methods" Url="html/39d8fc24-236a-571a-d10f-ea9abcbe0222.htm" />
+    <HelpKINode Title="properties" Url="html/a0d1f1f6-7408-d9d7-f1f6-05a386e78d03.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WinUsbManager.DeviceChange event" Url="html/43d0997e-3f63-bdf4-d82e-7837dfe8c9f1.htm" />
+  <HelpKINode Title="WinUsbManager.Dispose method" Url="html/4123900a-afea-8d6b-43d4-efb086c12293.htm" />
+  <HelpKINode Title="WinUsbManager.Finalize method" Url="html/5ebf84a8-84e5-9499-4e08-76fb6ca3b82a.htm" />
+  <HelpKINode Title="WinUsbManager.UsbDevices property" Url="html/f3ede2a7-3d4a-e35d-c63a-64d1d3c62eab.htm" />
+  <HelpKINode Title="WinUsbManager.WinUsbManager constructor" Url="html/c9822f4d-107e-87c5-132c-1ff35c9c2014.htm" />
+  <HelpKINode Title="WinUsbNet namespace" Url="html/015f32d9-061b-6669-eca8-b8abe1d244d9.htm" />
+  <HelpKINode Title="WinUsbNet.DeviceChangeEventArgs class" Url="html/041a8667-9920-f2c9-22c0-4f8ff4c22e57.htm" />
+  <HelpKINode Title="WinUsbNet.PipeStream class" Url="html/cf6e7c0e-4099-2906-21b9-5d2043e72c19.htm" />
+  <HelpKINode Title="WinUsbNet.PipeStreamCollection class" Url="html/6e7f9ac7-bc9a-bd06-8c2f-aa208bb3d2fd.htm" />
+  <HelpKINode Title="WinUsbNet.UsbDevice class" Url="html/5c95851e-394c-5556-4008-f65a2b8bf88f.htm" />
+  <HelpKINode Title="WinUsbNet.UsbDevice.GetMyStringCallback delegate" Url="html/0853b087-d310-822a-88b8-890982c464ca.htm" />
+  <HelpKINode Title="WinUsbNet.UsbDeviceCollection class" Url="html/03788d6a-b0a1-b7fd-6383-528850d6a37e.htm" />
+  <HelpKINode Title="WinUsbNet.WinUsbManager class" Url="html/8c270fc0-ca62-14d7-8032-031983fcb2a9.htm" />
+  <HelpKINode Title="Write method" Url="html/a35c238c-339a-46a6-a782-724f461c062f.htm" />
+  <HelpKINode Title="WriteByte method" Url="html/026cd088-52c8-9636-d1b5-f6fbd66de11b.htm" />
+  <HelpKINode Title="WriteMaxPacketSize property" Url="html/46ffad56-1b02-35c2-1458-786a477692d2.htm" />
+  <HelpKINode Title="WriteTimeout property" Url="html/2806116b-a0c1-bf03-ee0c-bda075b13ff6.htm" />
+  <HelpKINode Title="WriteUseShortPacket property" Url="html/b0009742-777a-db24-aa1b-17cc1c51ab2f.htm" />
+</HelpKI>

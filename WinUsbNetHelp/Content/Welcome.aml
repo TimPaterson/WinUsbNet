@@ -44,7 +44,7 @@
 			</para>
 			<para>
 					To transfer data, select an endpoint from the dropdown. Most 
-					endpoints are either In or Out, but as shown in the screenshot, 
+					endpoints are either In or Out, but 
 					it is possible for a single endpoint to be both. To read data 
 					from an In endpoint, just set the number of bytes to read in the 
 					Read Length box (decimal) and click the Transfer Data button. The 

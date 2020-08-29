@@ -1,0 +1,42 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>WinUsbNet: .NET class library for WinUSB.sys</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="Introduction" /><meta name="Microsoft.Help.Id" content="e8f8006d-1c14-4a09-a066-99700d658e09" /><meta name="Description" content="The WinUsbNet class library gives .NET managed code direct access to USB devices through WinUSB, the generic USB device driver included with Windows." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">WinUsbNet: .NET class library for WinUSB.sys<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\e8f8006d-1c14-4a09-a066-99700d658e09.htm" title="WinUsbNet: .NET class library for WinUSB.sys" tocid="roottoc">WinUsbNet: .NET class library for WinUSB.sys</a></div><div class="toclevel1 current" data-toclevel="1"><a data-tochassubtree="false" href="../html/e8f8006d-1c14-4a09-a066-99700d658e09.htm" title="WinUsbNet: .NET class library for WinUSB.sys" tocid="e8f8006d-1c14-4a09-a066-99700d658e09">WinUsbNet: .NET class library for WinUSB.sys</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/015f32d9-061b-6669-eca8-b8abe1d244d9.htm" title="WinUsbNet" tocid="015f32d9-061b-6669-eca8-b8abe1d244d9">WinUsbNet</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="../icons/Help.png" /></td><td class="titleColumn"><h1>WinUsbNet: .NET class library for WinUSB.sys</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>
+				The WinUsbNet class library gives .NET managed code direct access to 
+				USB devices through WinUSB, the generic USB device driver included 
+				with Windows.
+			</p><p>
+				This project is intended for developers who are creating their own 
+				USB device. Using WinUsbNet eliminates the need to understand 
+				anything about Windows device drivers. If you know what a USB 
+				endpoint is and can use the .NET Framework class Stream, you know 
+				enough to transfer data between your application and your USB device.
+			</p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Getting Started</span></div><div id="ID0RBSection" class="collapsibleSection"><p>
+					Start with the
+					<a href="8c270fc0-ca62-14d7-8032-031983fcb2a9.htm">WinUsbManager</a> 
+					class.
+				</p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />WinUsbNet Test App</span></div><div id="ID1RBSection" class="collapsibleSection"><p>
+					To use the WinUsbNet Test App, first copy and paste the GUID that 
+					WinUSB uses to identify the device. Clicking the Find button will 
+					cause a search for any matching devices already attached. The app 
+					will also track as devices are attached and detached.
+			</p><p>
+					Tooltips are used to explain the usage of each element on the 
+					interface. Take a moment to hover the mouse over the various 
+					controls. Controls can become enabled or disabled depending on 
+					the endpoint and direction selected.
+			</p><p>
+					To transfer data, select an endpoint from the dropdown. Most 
+					endpoints are either In or Out, but 
+					it is possible for a single endpoint to be both. To read data 
+					from an In endpoint, just set the number of bytes to read in the 
+					Read Length box (decimal) and click the Transfer Data button. The 
+					data will show up as hex bytes in blue in the output window. To 
+					send data to an Out endpoint, enter the data in the Out Data (hex) 
+					text box as a sequence of hex bytes separated by spaces, then 
+					click the Transfer Data button. The data you send will be 
+					displayed in the output window in green.
+			</p><p>
+					If relevant to your application, you can perform a USB control 
+					transfer by selecting “Control” from the Endpoint dropdown. This 
+					will enable the group box labeled Control Transfer (hex values), 
+					where you can enter the specifics. You will need to understand USB 
+					control transfers, although some basic help is available in tooltips.
+				</p></div></div></div><div id="pageFooter" class="pageFooter" /></body></html>

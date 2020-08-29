@@ -30,11 +30,12 @@ namespace WinUsbNet
 	/// Represents a matching USB device that has been attached to the host computer.
 	/// </summary>
 	/// <remarks>
+	/// <para>
 	/// <b>UsbDevice</b> represents a USB device that has been attached and whose 
 	/// WinUSB GUID matches the GUID of the parent <see cref="WinUsbManager"/>.
 	/// You do not create a <b>UsbDevice</b> directly. A <b>UsbDevice</b> is
 	/// automatically placed in the <see cref="WinUsbManager.UsbDevices"/>
-	/// collection for each matching USB device that is attached.
+	/// collection for each matching USB device that is attached.</para>
 	/// <para>
 	/// A <b>UsbDevice</b> is valid only as long as the corresponding USB device
 	/// remains attached to the host. Once it is been detached, the <b>UsbDevice</b>
@@ -218,10 +219,11 @@ namespace WinUsbNet
 		/// never time out.</para>
 		/// </value>
 		/// <remarks>
+		/// <para>
 		/// You must set the <b>DefaultReadTimeout</b> before opening the
 		/// <see cref="UsbDevice"/>. The <see cref="Open">Open</see> method
 		/// will set the <see cref="PipeStream.ReadTimeout"/> property of
-		/// each <see cref="PipeStream"/> to this value.
+		/// each <see cref="PipeStream"/> to this value.</para>
 		/// <para>
 		/// The default value is 100 milliseconds.</para>
 		/// </remarks>
@@ -244,12 +246,13 @@ namespace WinUsbNet
 		/// Callback function used to get the string returned by <see cref="ToString">ToString</see>.
 		/// </summary>
 		/// <remarks>
+		/// <para>
 		/// By default, <see cref="ToString">ToString</see> simply returns 
 		/// the fully qualified name of the type of <see cref="UsbDevice"/>, 
 		/// "WinUsbNet.UsbDevice". This default behavior can be changed by 
 		/// assigning a callback function to <b>GetMyString</b>. The string
 		/// returned by the callback function will be the string returned
-		/// by <see cref="ToString">ToString</see>.
+		/// by <see cref="ToString">ToString</see>.</para>
 		/// <para>
 		/// The signature for the callback function is:
 		/// <code>
@@ -284,13 +287,14 @@ namespace WinUsbNet
 		/// <exception cref="Win32Exception">An error was reported by
 		/// the operating system.</exception>
 		/// <remarks>
+		/// <para>
 		/// If the open method succeeds, it will create the 
 		/// <see cref="PipeStreams"/> collection and populate it with
 		/// <see cref="PipeStream"/> objects corresponding to the
 		/// endpoints on the USB device. The initial value of
 		/// the <see cref="PipeStream.ReadTimeout"/> property of each
 		/// <see cref="PipeStream"/> will be set to
-		/// <see cref="DefaultReadTimeout"/>.
+		/// <see cref="DefaultReadTimeout"/>.</para>
 		/// <para>
 		/// If the open fails, an exception will be thrown.</para>
 		/// <para>
@@ -413,9 +417,10 @@ namespace WinUsbNet
 		/// <exception cref="Win32Exception">An error was reported by
 		/// the operating system.</exception>
 		/// <remarks>
+		/// <para>
 		/// The first four arguments of this method correspond precisely with the
 		/// like-named fields of a USB Setup packet. See the USB specification
-		/// for the meaning and use of these parameters.
+		/// for the meaning and use of these parameters.</para>
 		/// <para>
 		/// The <i>wLength</i> field of the USB Setup packet is set to the 
 		/// length of <paramref name="buffer"/>, or zero if <paramref name="buffer"/>
@@ -468,9 +473,10 @@ namespace WinUsbNet
 		/// <exception cref="Win32Exception">An error was reported by
 		/// the operating system.</exception>
 		/// <remarks>
+		/// <para>
 		/// The arguments of this method correspond precisely with the
 		/// like-named fields of a USB Setup packet. See the USB specification
-		/// for the meaning and use of these parameters.
+		/// for the meaning and use of these parameters.</para>
 		/// <para>
 		/// The <paramref name="wLength"/> parameter is the maximum number of
 		/// bytes to read from the USB device, and the USB device may send less.

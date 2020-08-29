@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Title="WinUsbNet: .NET class library for WinUSB.sys" Url="html/e8f8006d-1c14-4a09-a066-99700d658e09.htm" />
+  <HelpTOCNode Id="85cf8306-5055-4da5-b702-c84809b84b9f" Title="WinUsbNet" Url="html/015f32d9-061b-6669-eca8-b8abe1d244d9.htm">
+    <HelpTOCNode Id="ddabd8b1-77e3-4b3a-8b49-60692a12bba4" Title="DeviceChangeEventArgs Class" Url="html/041a8667-9920-f2c9-22c0-4f8ff4c22e57.htm">
+      <HelpTOCNode Title="DeviceChangeEventArgs Constructor " Url="html/28e0ac91-c00d-ad15-3aa9-03231fd5edc4.htm" />
+      <HelpTOCNode Id="1f42645a-f9a0-4991-85a0-295adcb541fa" Title="DeviceChangeEventArgs Properties" Url="html/902d8db8-fc40-d965-9373-7ea06999a38f.htm">
+        <HelpTOCNode Title="DeviceName Property " Url="html/48ef607d-4ec4-7210-1a67-d354fb672eac.htm" />
+        <HelpTOCNode Title="IsAttach Property " Url="html/73500399-4cb5-cebd-5b92-cfab3ba54edd.htm" />
+        <HelpTOCNode Title="UsbDevice Property " Url="html/8488c66c-c6cc-c1ce-ba63-396d709824c1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="DeviceChangeEventArgs Methods" Url="html/c095f09a-b249-826b-54d0-e715a4515fc4.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1625c77b-b1a8-4975-ac87-5e0a51d33e97" Title="PipeStream Class" Url="html/cf6e7c0e-4099-2906-21b9-5d2043e72c19.htm">
+      <HelpTOCNode Id="a44c3eb2-5dd4-4ace-9fd7-f19507a97a0c" Title="PipeStream Properties" Url="html/df1486ea-ca3f-6f57-ee08-62bb77b191a9.htm">
+        <HelpTOCNode Title="CanRead Property " Url="html/198ffda2-8634-0a30-8b00-f840e8acb6a0.htm" />
+        <HelpTOCNode Title="CanSeek Property " Url="html/134253b8-de9a-87a7-71ed-88d104e8ae73.htm" />
+        <HelpTOCNode Title="CanTimeout Property " Url="html/6474db6e-cc00-ed47-e72f-d852d82280b4.htm" />
+        <HelpTOCNode Title="CanWrite Property " Url="html/9229f12c-f05c-8b1b-899c-c5329f3c7c51.htm" />
+        <HelpTOCNode Title="Length Property " Url="html/e84bb2e4-22e1-0427-7211-76fb1f4c3a39.htm" />
+        <HelpTOCNode Title="PipeId Property " Url="html/bcccc9b8-598f-2d83-a46a-5be3872e960d.htm" />
+        <HelpTOCNode Title="Position Property " Url="html/c90ccb91-a9d8-d3b8-2f94-5f04c4096c12.htm" />
+        <HelpTOCNode Title="ReadMaxPacketSize Property " Url="html/eecab746-4b96-d7f5-420b-ef02097e4258.htm" />
+        <HelpTOCNode Title="ReadTimeout Property " Url="html/c76eea62-e247-783a-d4eb-27654f9d01cf.htm" />
+        <HelpTOCNode Title="ReadUseShortPacket Property " Url="html/5fb5d6f5-9f4e-a9ec-4b39-09b06349ca52.htm" />
+        <HelpTOCNode Title="WriteMaxPacketSize Property " Url="html/46ffad56-1b02-35c2-1458-786a477692d2.htm" />
+        <HelpTOCNode Title="WriteTimeout Property " Url="html/2806116b-a0c1-bf03-ee0c-bda075b13ff6.htm" />
+        <HelpTOCNode Title="WriteUseShortPacket Property " Url="html/b0009742-777a-db24-aa1b-17cc1c51ab2f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="aee68a4c-fe99-4e96-b0ee-1a6aa6d5a7b7" Title="PipeStream Methods" Url="html/fe0ad571-45b2-e7fd-fef2-bfe0bd52acac.htm">
+        <HelpTOCNode Title="ClearReadBuffer Method " Url="html/bac83312-cf7a-6b45-e06f-011810fd9737.htm" />
+        <HelpTOCNode Title="Flush Method " Url="html/d894fba8-c47c-5035-b405-ff3d2acbcea0.htm" />
+        <HelpTOCNode Title="Read Method " Url="html/5875c070-6f2b-00e2-e673-5ad6ba4eebef.htm" />
+        <HelpTOCNode Title="ReadByte Method " Url="html/ab9b8c41-c701-d7eb-22b7-5fa3e9b2bd6e.htm" />
+        <HelpTOCNode Title="Seek Method " Url="html/d4a13a29-6700-3496-4f51-5a242a6591dc.htm" />
+        <HelpTOCNode Title="SetLength Method " Url="html/90c91d0a-4745-09c8-a7fb-631553db6a9c.htm" />
+        <HelpTOCNode Title="Write Method " Url="html/a35c238c-339a-46a6-a782-724f461c062f.htm" />
+        <HelpTOCNode Title="WriteByte Method " Url="html/026cd088-52c8-9636-d1b5-f6fbd66de11b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c6e4bbee-9d39-49dd-83c3-c25c0e75c1c8" Title="PipeStreamCollection Class" Url="html/6e7f9ac7-bc9a-bd06-8c2f-aa208bb3d2fd.htm">
+      <HelpTOCNode Title="PipeStreamCollection Properties" Url="html/839bc008-af5d-ad73-e790-a53408154633.htm" />
+      <HelpTOCNode Title="PipeStreamCollection Methods" Url="html/385c910a-3bdc-75a6-baf8-02d2b4d2fa76.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="45281180-4802-4a4a-b1b2-e765b2aca881" Title="UsbDevice Class" Url="html/5c95851e-394c-5556-4008-f65a2b8bf88f.htm">
+      <HelpTOCNode Id="16c62afc-61af-4949-80b8-e536e74b568b" Title="UsbDevice Properties" Url="html/f19a7812-80f3-fdfc-4bf1-7f04da48816f.htm">
+        <HelpTOCNode Title="DefaultReadTimeout Property " Url="html/00ba8c4f-96fc-6a72-3f4e-ec26f0db4b37.htm" />
+        <HelpTOCNode Title="DeviceName Property " Url="html/768277de-2e88-c9f3-e819-2fb289cc73bb.htm" />
+        <HelpTOCNode Title="GetMyString Property " Url="html/eb45d302-2640-cdde-4f84-89acdae5ab10.htm" />
+        <HelpTOCNode Title="IsAttached Property " Url="html/842a228f-bb62-ae8a-844b-325846b0c71f.htm" />
+        <HelpTOCNode Title="IsOpen Property " Url="html/4ce6b215-8221-fb2f-9b9a-cd5f7d4dd613.htm" />
+        <HelpTOCNode Title="PipeStreams Property " Url="html/9908be68-4d50-ea5d-14c4-28360f84d27c.htm" />
+        <HelpTOCNode Title="Tag Property " Url="html/72345f7e-c603-05ee-a7c9-4a44e0485cf3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dc961330-1257-4b39-8c4d-da7ff5000eb3" Title="UsbDevice Methods" Url="html/a8775b3d-cd90-e8c7-cf82-214c2f32e757.htm">
+        <HelpTOCNode Title="Close Method " Url="html/b6b228d9-3e21-be6f-25dc-3c3b3657b820.htm" />
+        <HelpTOCNode Title="ControlRead Method " Url="html/7e91a4ce-bb64-709d-dee2-b46cbf7e9c8b.htm" />
+        <HelpTOCNode Title="ControlWrite Method " Url="html/5f9bf2ab-21bd-1fcd-197d-f234eaa17a9d.htm" />
+        <HelpTOCNode Title="Finalize Method " Url="html/5e7180f7-f3bf-9fc8-c9de-2b866f274c5d.htm" />
+        <HelpTOCNode Title="Open Method " Url="html/72bfdb00-fb76-63ad-2011-3ef78f66e9ca.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/298d2160-8828-eae1-e06a-e91c1ccc8c31.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="UsbDevice.GetMyStringCallback Delegate" Url="html/0853b087-d310-822a-88b8-890982c464ca.htm" />
+    <HelpTOCNode Id="2cfe555d-67c3-49f3-a8ea-af5e09ee63b2" Title="UsbDeviceCollection Class" Url="html/03788d6a-b0a1-b7fd-6383-528850d6a37e.htm">
+      <HelpTOCNode Title="UsbDeviceCollection Properties" Url="html/102db9a9-a39b-211b-3af8-cd39141695c4.htm" />
+      <HelpTOCNode Title="UsbDeviceCollection Methods" Url="html/b92a65a5-8a07-cfc7-d0f5-36a668e7e4c9.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="47826ddb-8ccf-44e3-b355-4910bbbf4e76" Title="WinUsbManager Class" Url="html/8c270fc0-ca62-14d7-8032-031983fcb2a9.htm">
+      <HelpTOCNode Title="WinUsbManager Constructor " Url="html/c9822f4d-107e-87c5-132c-1ff35c9c2014.htm" />
+      <HelpTOCNode Id="05f121a5-3c1c-4356-ae7b-e0be5642c554" Title="WinUsbManager Properties" Url="html/a0d1f1f6-7408-d9d7-f1f6-05a386e78d03.htm">
+        <HelpTOCNode Title="UsbDevices Property " Url="html/f3ede2a7-3d4a-e35d-c63a-64d1d3c62eab.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="79c79978-5f8d-4dd7-909b-2715e1951f47" Title="WinUsbManager Methods" Url="html/39d8fc24-236a-571a-d10f-ea9abcbe0222.htm">
+        <HelpTOCNode Id="5470fbda-1be0-44fd-bdeb-e92e271fb8fa" Title="Dispose Method " Url="html/4123900a-afea-8d6b-43d4-efb086c12293.htm">
+          <HelpTOCNode Title="Dispose Method " Url="html/35f3b214-ac8f-38df-fce0-a70ab9aeaf34.htm" />
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/94cb0cf7-4cc3-bdae-d176-c1aca1ae1376.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Finalize Method " Url="html/5ebf84a8-84e5-9499-4e08-76fb6ca3b82a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a842cf55-aa92-4965-9409-461ffdfae0f5" Title="WinUsbManager Events" Url="html/9e0a7df6-e0a8-7ca4-48e3-2569369c1fc5.htm">
+        <HelpTOCNode Title="DeviceChange Event" Url="html/43d0997e-3f63-bdf4-d82e-7837dfe8c9f1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
