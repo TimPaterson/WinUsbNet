@@ -41,8 +41,6 @@
 			this.lblType = new System.Windows.Forms.Label();
 			this.lblOutDataList = new System.Windows.Forms.Label();
 			this.txtOutData = new System.Windows.Forms.TextBox();
-			this.radOut = new System.Windows.Forms.RadioButton();
-			this.radIn = new System.Windows.Forms.RadioButton();
 			this.drpEndpoint = new System.Windows.Forms.ComboBox();
 			this.lblEndpoint = new System.Windows.Forms.Label();
 			this.lblInData = new System.Windows.Forms.Label();
@@ -61,13 +59,21 @@
 			this.btnFind = new System.Windows.Forms.Button();
 			this.lblAttach = new System.Windows.Forms.Label();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.radOut = new System.Windows.Forms.RadioButton();
+			this.radIn = new System.Windows.Forms.RadioButton();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.radText = new System.Windows.Forms.RadioButton();
+			this.radHex = new System.Windows.Forms.RadioButton();
 			this.grpEndpoint.SuspendLayout();
 			this.grpSetup.SuspendLayout();
+			this.panel1.SuspendLayout();
+			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// txtLength
 			// 
-			this.txtLength.Location = new System.Drawing.Point(90, 213);
+			this.txtLength.Location = new System.Drawing.Point(113, 213);
 			this.txtLength.Name = "txtLength";
 			this.txtLength.Size = new System.Drawing.Size(30, 20);
 			this.txtLength.TabIndex = 4;
@@ -93,11 +99,11 @@
 			// lblLength
 			// 
 			this.lblLength.AutoSize = true;
-			this.lblLength.Location = new System.Drawing.Point(12, 216);
+			this.lblLength.Location = new System.Drawing.Point(64, 216);
 			this.lblLength.Name = "lblLength";
-			this.lblLength.Size = new System.Drawing.Size(72, 13);
+			this.lblLength.Size = new System.Drawing.Size(43, 13);
 			this.lblLength.TabIndex = 1;
-			this.lblLength.Text = "Read Length:";
+			this.lblLength.Text = "Length:";
 			// 
 			// txtRequest
 			// 
@@ -154,41 +160,20 @@
 			// lblOutDataList
 			// 
 			this.lblOutDataList.AutoSize = true;
-			this.lblOutDataList.Location = new System.Drawing.Point(12, 250);
+			this.lblOutDataList.Location = new System.Drawing.Point(62, 250);
 			this.lblOutDataList.Name = "lblOutDataList";
-			this.lblOutDataList.Size = new System.Drawing.Size(79, 13);
+			this.lblOutDataList.Size = new System.Drawing.Size(53, 13);
 			this.lblOutDataList.TabIndex = 4;
-			this.lblOutDataList.Text = "Out Data (hex):";
+			this.lblOutDataList.Text = "Out Data:";
 			// 
 			// txtOutData
 			// 
-			this.txtOutData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this.txtOutData.Location = new System.Drawing.Point(97, 247);
+			this.txtOutData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtOutData.Location = new System.Drawing.Point(121, 247);
 			this.txtOutData.Name = "txtOutData";
-			this.txtOutData.Size = new System.Drawing.Size(195, 20);
+			this.txtOutData.Size = new System.Drawing.Size(184, 20);
 			this.txtOutData.TabIndex = 6;
-			// 
-			// radOut
-			// 
-			this.radOut.AutoSize = true;
-			this.radOut.Location = new System.Drawing.Point(203, 54);
-			this.radOut.Name = "radOut";
-			this.radOut.Size = new System.Drawing.Size(42, 17);
-			this.radOut.TabIndex = 4;
-			this.radOut.Text = "Out";
-			this.radOut.UseVisualStyleBackColor = true;
-			// 
-			// radIn
-			// 
-			this.radIn.AutoSize = true;
-			this.radIn.Location = new System.Drawing.Point(163, 54);
-			this.radIn.Name = "radIn";
-			this.radIn.Size = new System.Drawing.Size(34, 17);
-			this.radIn.TabIndex = 3;
-			this.radIn.Text = "In";
-			this.radIn.UseVisualStyleBackColor = true;
-			this.radIn.CheckedChanged += new System.EventHandler(this.radIn_CheckedChanged);
 			// 
 			// drpEndpoint
 			// 
@@ -231,13 +216,13 @@
 			// 
 			// txtLog
 			// 
-			this.txtLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
+			this.txtLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.txtLog.Location = new System.Drawing.Point(16, 295);
 			this.txtLog.Name = "txtLog";
 			this.txtLog.ReadOnly = true;
-			this.txtLog.Size = new System.Drawing.Size(276, 149);
+			this.txtLog.Size = new System.Drawing.Size(289, 149);
 			this.txtLog.TabIndex = 7;
 			this.txtLog.Text = "";
 			this.txtLog.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.txtLog_MouseDoubleClick);
@@ -257,7 +242,7 @@
 			// 
 			this.txtGuid.Location = new System.Drawing.Point(12, 25);
 			this.txtGuid.Name = "txtGuid";
-			this.txtGuid.Size = new System.Drawing.Size(280, 20);
+			this.txtGuid.Size = new System.Drawing.Size(293, 20);
 			this.txtGuid.TabIndex = 9;
 			// 
 			// label8
@@ -279,7 +264,7 @@
 			this.grpEndpoint.Enabled = false;
 			this.grpEndpoint.Location = new System.Drawing.Point(12, 80);
 			this.grpEndpoint.Name = "grpEndpoint";
-			this.grpEndpoint.Size = new System.Drawing.Size(280, 95);
+			this.grpEndpoint.Size = new System.Drawing.Size(293, 95);
 			this.grpEndpoint.TabIndex = 11;
 			this.grpEndpoint.TabStop = false;
 			this.grpEndpoint.Text = "Endpoint properties";
@@ -344,7 +329,7 @@
 			this.grpSetup.Controls.Add(this.lblRequest);
 			this.grpSetup.Controls.Add(this.lblIndex);
 			this.grpSetup.Controls.Add(this.lblValue);
-			this.grpSetup.Location = new System.Drawing.Point(136, 181);
+			this.grpSetup.Location = new System.Drawing.Point(149, 181);
 			this.grpSetup.Name = "grpSetup";
 			this.grpSetup.Size = new System.Drawing.Size(156, 60);
 			this.grpSetup.TabIndex = 12;
@@ -353,7 +338,7 @@
 			// 
 			// btnFind
 			// 
-			this.btnFind.Location = new System.Drawing.Point(251, 51);
+			this.btnFind.Location = new System.Drawing.Point(264, 51);
 			this.btnFind.Name = "btnFind";
 			this.btnFind.Size = new System.Drawing.Size(41, 23);
 			this.btnFind.TabIndex = 13;
@@ -363,17 +348,80 @@
 			// 
 			// lblAttach
 			// 
-			this.lblAttach.Location = new System.Drawing.Point(236, 9);
+			this.lblAttach.Location = new System.Drawing.Point(251, 9);
 			this.lblAttach.Name = "lblAttach";
-			this.lblAttach.Size = new System.Drawing.Size(56, 13);
+			this.lblAttach.Size = new System.Drawing.Size(54, 13);
 			this.lblAttach.TabIndex = 14;
 			this.lblAttach.Text = "Detached";
+			// 
+			// panel1
+			// 
+			this.panel1.Controls.Add(this.radOut);
+			this.panel1.Controls.Add(this.radIn);
+			this.panel1.Location = new System.Drawing.Point(149, 48);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(112, 30);
+			this.panel1.TabIndex = 16;
+			// 
+			// radOut
+			// 
+			this.radOut.AutoSize = true;
+			this.radOut.Location = new System.Drawing.Point(45, 6);
+			this.radOut.Name = "radOut";
+			this.radOut.Size = new System.Drawing.Size(42, 17);
+			this.radOut.TabIndex = 6;
+			this.radOut.Text = "Out";
+			this.radOut.UseVisualStyleBackColor = true;
+			// 
+			// radIn
+			// 
+			this.radIn.AutoSize = true;
+			this.radIn.Location = new System.Drawing.Point(5, 6);
+			this.radIn.Name = "radIn";
+			this.radIn.Size = new System.Drawing.Size(34, 17);
+			this.radIn.TabIndex = 5;
+			this.radIn.Text = "In";
+			this.radIn.UseVisualStyleBackColor = true;
+			this.radIn.CheckedChanged += new System.EventHandler(this.radIn_CheckedChanged);
+			// 
+			// panel2
+			// 
+			this.panel2.Controls.Add(this.radText);
+			this.panel2.Controls.Add(this.radHex);
+			this.panel2.Location = new System.Drawing.Point(5, 210);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(58, 57);
+			this.panel2.TabIndex = 17;
+			// 
+			// radText
+			// 
+			this.radText.AutoSize = true;
+			this.radText.Checked = true;
+			this.radText.Location = new System.Drawing.Point(7, 4);
+			this.radText.Name = "radText";
+			this.radText.Size = new System.Drawing.Size(46, 17);
+			this.radText.TabIndex = 16;
+			this.radText.TabStop = true;
+			this.radText.Text = "Text";
+			this.radText.UseVisualStyleBackColor = true;
+			// 
+			// radHex
+			// 
+			this.radHex.AutoSize = true;
+			this.radHex.Location = new System.Drawing.Point(7, 27);
+			this.radHex.Name = "radHex";
+			this.radHex.Size = new System.Drawing.Size(44, 17);
+			this.radHex.TabIndex = 17;
+			this.radHex.Text = "Hex";
+			this.radHex.UseVisualStyleBackColor = true;
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(304, 456);
+			this.ClientSize = new System.Drawing.Size(317, 456);
+			this.Controls.Add(this.panel2);
+			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.lblAttach);
 			this.Controls.Add(this.btnFind);
 			this.Controls.Add(this.grpSetup);
@@ -390,17 +438,19 @@
 			this.Controls.Add(this.drpEndpoint);
 			this.Controls.Add(this.lblOutDataList);
 			this.Controls.Add(this.txtOutData);
-			this.Controls.Add(this.radOut);
-			this.Controls.Add(this.radIn);
-			this.MinimumSize = new System.Drawing.Size(320, 380);
+			this.MinimumSize = new System.Drawing.Size(333, 380);
 			this.Name = "MainForm";
 			this.Text = "WinUSB Test Interface";
-			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.grpEndpoint.ResumeLayout(false);
 			this.grpEndpoint.PerformLayout();
 			this.grpSetup.ResumeLayout(false);
 			this.grpSetup.PerformLayout();
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
+			this.panel2.ResumeLayout(false);
+			this.panel2.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -413,8 +463,6 @@
 		private System.Windows.Forms.Label lblRequest;
 		private System.Windows.Forms.TextBox txtType;
 		private System.Windows.Forms.Label lblType;
-		private System.Windows.Forms.RadioButton radOut;
-		private System.Windows.Forms.RadioButton radIn;
 		private System.Windows.Forms.Label lblValue;
 		private System.Windows.Forms.TextBox txtLength;
 		private System.Windows.Forms.TextBox txtIndex;
@@ -440,6 +488,12 @@
 		private System.Windows.Forms.Label lblAttach;
 		private System.Windows.Forms.ToolTip toolTip;
 		private System.Windows.Forms.Button btnClear;
+		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.RadioButton radOut;
+		private System.Windows.Forms.RadioButton radIn;
+		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.RadioButton radText;
+		private System.Windows.Forms.RadioButton radHex;
 	}
 }
 

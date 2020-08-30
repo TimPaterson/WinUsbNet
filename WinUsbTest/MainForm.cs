@@ -24,13 +24,22 @@ namespace WinUsbTest
 		const string MsgNotFound = "Device not found.";
 		const string MsgDetached = "Device detached.";
 		const string MsgOpenError = "Unable to open device: ";
+		const string StuffData = "The quick brown fox jumped over the lazy dog. \r\n";
 
 		static Color clrError = Color.Red;
 
 		// Tool tips
 		const string TipGuid = "Cut and paste the GUID from the driver INF file";
 		const string TipFind = "Look for USB devices with this GUID";
-		const string TipLength = "Maximum number of bytes to read";
+		const string TipLength = 
+			"When reading, the maximum number of bytes to read.\n\n" +
+			"When writing, if this value is zero or blank then the it is ignored\n" +
+			"and the Out Data field is written. This will be zero bytes if the\n" + 
+			"Out Data field is empty.\n\n" +
+			"If it is non-zero when writing, then it is the actual number of \n" +
+			"bytes to write. If more data is entered, it is trucated; if less data \n" +
+			"is entered, it is repeated. If no data is entered, an internal string\n" +
+			"is used to generate the amount of data requested.";
 		const string TipType = "bmRequestType field. Common values:\n" +
 			"0 = device\n" + 
 			"1 = interface\n" + 
@@ -64,9 +73,11 @@ namespace WinUsbTest
 		const string TipEndpoint = "Endpoint for data transfer";
 		const string TipDirection = "Direction of transfer";
 		const string TipTransfer = "Execute data transfer";
-		const string TipOutData = "Data to send, as hex bytes";
+		const string TipOutData = "Data to send, as text or hex bytes according to the selection.";
 		const string TipClearBuf = "Clear read buffer";
 		const string TipReadTimeout = "Time to wait for read data";
+		const string TipText = "Display data and accept output data as a text string.";
+		const string TipHex = "Display data and accept output data as hex bytes.";
 
 		#endregion
 
@@ -194,6 +205,9 @@ namespace WinUsbTest
 				drpEndpoint.Items.Add(new EndpointItem(str, pipe.PipeId));
 			}
 			btnXfer.Enabled = true;
+			txtLength.Enabled = true;
+			radHex.Enabled = true;
+			radText.Enabled = true;
 			drpEndpoint.Enabled = true;
 			lblAttach.Text = MsgAttach;
 			drpEndpoint.SelectedIndex = 0;
@@ -212,6 +226,8 @@ namespace WinUsbTest
 			grpSetup.Enabled = false;
 			txtOutData.Enabled = false;
 			txtLength.Enabled = false;
+			radHex.Enabled = false;
+			radText.Enabled = false;
 			lblAttach.Text = MsgDetach;
 			m_Device = null;
 		}
@@ -247,7 +263,6 @@ namespace WinUsbTest
 		void LogData(byte[] arbData, int count, MsgType type)
 		{
 			string strMsg;
-			byte b;
 
 			if (arbData == null)
 				return;
@@ -257,11 +272,18 @@ namespace WinUsbTest
 
 			if (count > 0)
 			{
-				strMsg = "";
-				for (int i = 0; i < count; i++)
+				if (radHex.Checked)
 				{
-					b = arbData[i];
-					strMsg += b.ToString("X2") + " ";
+					StringBuilder sbMsg = new StringBuilder(count * 3);
+					for (int i = 0; i < count; i++)
+					{
+						sbMsg.Append($"{arbData[i]:X2} ");
+					}
+					strMsg = sbMsg.ToString();
+				}
+				else
+				{
+					strMsg = Encoding.Default.GetString(arbData);
 				}
 				LogMsg(strMsg, type);
 			}
@@ -322,9 +344,45 @@ namespace WinUsbTest
 			Match match;
 			Group group;
 			int i;
+			int iLen;
+			int iSrc;
 
+			// If a length is specified, use that number. If output data has been entered,
+			// repeat/trim it to get the specified length. if no ouput data is present,
+			// generate it from an internal string.
 
-			str = txtOutData.Text.Trim();
+			iLen = 0;
+			if (txtLength.TextLength != 0)
+				iLen = ReadInt(txtLength);
+
+			str = txtOutData.Text;
+
+			if (radText.Checked && str.Length != 0 || (str = str.Trim()).Length == 0 && iLen != 0)
+			{
+				StringBuilder stb;
+
+				if (iLen == 0)
+					return Encoding.ASCII.GetBytes(str);
+				
+				stb = new StringBuilder(iLen, iLen);
+
+				if (str.Length == 0)
+					str = StuffData;
+
+				for (; ; )
+				{
+					if (str.Length >= iLen)
+					{
+						stb.Append(str, 0, iLen);
+						break;
+					}
+					stb.Append(str);
+					iLen -= str.Length;
+				}
+				// Convert to a byte array
+				return Encoding.ASCII.GetBytes(stb.ToString());
+			}
+
 			if (str.Length == 0)
 				return new byte[0];
 
@@ -341,14 +399,21 @@ namespace WinUsbTest
 			i = 0;
 			if (group.Success)
 			{
-				arbData = new byte[group.Captures.Count + 1];
-				for (; i < group.Captures.Count; i++)
+				if (iLen == 0)
+					iLen = group.Captures.Count + 1;
+				arbData = new byte[iLen];
+				for (; i < group.Captures.Count && i < arbData.Length; i++)
 					arbData[i] = byte.Parse(group.Captures[i].Value, NumberStyles.AllowHexSpecifier);
 			}
 			else
 				arbData = new byte[1];
 
 			arbData[i] = byte.Parse(match.Groups[2].Value, NumberStyles.AllowHexSpecifier);
+
+			// If requested length is longer than supplied data, repeat it
+			for (iSrc = 0; i < iLen; iSrc++, i++)
+				arbData[i] = arbData[iSrc];
+
 			return arbData;
 		}
 
@@ -389,6 +454,8 @@ namespace WinUsbTest
 				Settings.Default.MainForm.RestoreForm(this);
 				txtGuid.Text = Settings.Default.Guid.ToString();
 			}
+			radHex.Checked = Settings.Default.HexData;
+			radText.Checked = !radHex.Checked;
 
 			// Tool tips
 			toolTip.InitialDelay = 200;
@@ -418,11 +485,14 @@ namespace WinUsbTest
 			toolTip.SetToolTip(btnClear, TipClearBuf);
 			toolTip.SetToolTip(txtReadTimeout, TipReadTimeout);
 			toolTip.SetToolTip(lblReadTimeout, TipReadTimeout);
+			toolTip.SetToolTip(radText, TipText);
+			toolTip.SetToolTip(radHex, TipHex);
 		}
 
 		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
 			Settings.Default.MainForm = new FormSettings(this);
+			Settings.Default.HexData = radHex.Checked;
 
 			Settings.Default.Save();
 			if (m_WinUsb != null)
@@ -492,7 +562,6 @@ namespace WinUsbTest
 
 		private void radIn_CheckedChanged(object sender, EventArgs e)
 		{
-			txtLength.Enabled = radIn.Checked;
 			txtOutData.Enabled = !radIn.Checked;
 		}
 
